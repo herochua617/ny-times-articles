@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width", initial-scale=1.0">
+		<title>Pretty Static - {{title}}</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="heading">
+				<h1>{{ title }}</h1>
+			</div>
+			<div class="copyright">
+				{% if 'copyright' in data %}
+					<p class="">{{ data['copyright'] }}</p>
+				{% endif %}
+			</div>
+			<div class="results">
+				<ul class="">
+					{% if 'results' in data %}
+						{% for item in data['results'] %}
+						<li class="">
+							<a href="{{ item['url'] }}" class="href">
+								{{ item['abstract'] }}
+							</a>
+							<br>
+							<br>
+						</li>			
+						{% endfor %}
+					{% endif %}
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
