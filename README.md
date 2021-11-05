@@ -25,7 +25,7 @@ $ pip install -r requirements.txt
 $ python main.py
 ```
 
-Your app should now be running on http://localhost:5010/
+Your app should now be running on http://localhost:5000/
 
 
 
