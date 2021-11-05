@@ -30,4 +30,4 @@ def Index():
      return render_template(filename) 
 
 if __name__ =='__main__': 
-    app.run("0.0.0.0","5010",debug=False)
+    app.run(debug=False)
