@@ -8,7 +8,6 @@ from jinja2 import Environment, FileSystemLoader
 load_dotenv()
 
 secret_key = os.getenv("API_KEY")
-f_folder = os.getenv("f_folder")
 filename_ref = os.getenv("filename_ref")
 filename = os.getenv("filename")
 f_API = "https://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/7.json?api-key=" + secret_key
