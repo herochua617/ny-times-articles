@@ -7,6 +7,13 @@ Make sure you have Python 3.10 [installed locally](https://docs.python-guide.org
 > If you are using heroku you may follow the steps below:
 
 ```sh
+heroku config:set API_KEY={Put the api key from heroku}
+heroku config:set filename_ref={Put the html template file name}
+heroku config:set filename={Put the rendered html file name}
+
+```
+
+```sh
 $ git clone https://github.com/herochua617/ny-times-articles.git
 $ cd ny-times-articles
 
