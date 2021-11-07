@@ -21,6 +21,8 @@ $ pip install -r requirements.txt
 
 $ heroku local web -f Procfile.windows
 ```
+For more information, you may refer to https://medium.com/@gitaumoses4/deploying-a-flask-application-on-heroku-e509e5c76524
+
 > If you do not have heroku then you may follow the steps below:
 
 1. Create an .env file with the variables below:
